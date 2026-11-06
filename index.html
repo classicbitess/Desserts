@@ -1,349 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Classic Bites &  Sweet Moments</title>
-<meta name="description" content="Classic Bites — beautiful desserts and unforgettable sweet moments.">
-
+<title>Classic Bites | Sweet Moments</title>
+<meta name="description" content="Classic Bites — baked desserts you can look through and order.">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
-
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  background: #fffaf8;
-  color: #392a30;
-  font-family: 'DM Sans', sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.announcement {
-  background: #f8dce5;
-  color: #7c4358;
-  text-align: center;
-  padding: 12px;
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-header {
-  max-width: 1200px;
-  margin: auto;
-  padding: 25px 6%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.logo span {
-  color: #b65f7c;
-}
-
-nav {
-  display: flex;
-  gap: 28px;
-  font-size: 13px;
-}
-
-nav a:hover {
-  color: #b65f7c;
-}
-
-.button {
-  display: inline-block;
-  background: #b65f7c;
-  color: white;
-  padding: 14px 25px;
-  border-radius: 50px;
-  font-size: 13px;
-  font-weight: bold;
-  transition: .3s;
-}
-
-.button:hover {
-  background: #944a65;
-  transform: translateY(-3px);
-}
-
-.hero {
-  max-width: 1200px;
-  margin: auto;
-  padding: 45px 6% 85px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 50px;
-}
-
-.eyebrow {
-  color: #b65f7c;
-  font-size: 11px;
-  letter-spacing: 3px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-}
-
-h1 {
-  font-size: clamp(45px, 6vw, 75px);
-  line-height: 1.1;
-  margin: 20px 0;
-}
-
-h1 em {
-  color: #b65f7c;
-}
-
-.hero p {
-  color: #806e75;
-  line-height: 1.9;
-  font-size: 15px;
-  margin-bottom: 30px;
-}
-
-.hero-image {
-  position: relative;
-}
-
-.hero-image img {
-  width: 100%;
-  height: 480px;
-  object-fit: cover;
-  border-radius: 50% 50% 20px 20px;
-}
-
-.stamp {
-  position: absolute;
-  bottom: 20px;
-  left: -25px;
-  background: #fffaf8;
-  color: #b65f7c;
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  transform: rotate(-10deg);
-  border: 1px solid #f0d7df;
-}
-
-.section {
-  padding: 85px 6%;
-  text-align: center;
-}
-
-.soft {
-  background: #fde8ee;
-}
-
-.section h2 {
-  font-size: clamp(35px, 4vw, 48px);
-  margin: 15px 0;
-}
-
-.intro {
-  max-width: 550px;
-  margin: 0 auto 40px;
-  color: #806e75;
-  line-height: 1.8;
-  font-size: 14px;
-}
-
-.gallery {
-  max-width: 1150px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-  text-align: left;
-}
-
-.treat {
-  background: white;
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px #8b536015;
-  transition: .3s;
-}
-
-.treat:hover {
-  transform: translateY(-7px);
-}
-
-.treat img {
-  width: 100%;
-  height: 270px;
-  object-fit: cover;
-}
-
-.treat-copy {
-  padding: 20px;
-}
-
-.treat-copy h3 {
-  font-size: 22px;
-  margin-bottom: 8px;
-}
-
-.treat-copy p {
-  color: #806e75;
-  font-size: 13px;
-  line-height: 1.7;
-}
-
-.about {
-  max-width: 950px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  align-items: center;
-  text-align: left;
-}
-
-.about img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 20px;
-}
-
-.about h2 {
-  font-size: 42px;
-  margin: 15px 0;
-}
-
-.about p {
-  color: #806e75;
-  line-height: 1.9;
-  font-size: 14px;
-}
-
-.note {
-  color: #b65f7c;
-  font-family: 'Playfair Display', serif;
-  font-size: 19px;
-  font-style: italic;
-  margin-top: 20px;
-}
-
-.cta {
-  background: #f6d9e2;
-  text-align: center;
-  padding: 85px 6%;
-}
-
-.cta h2 {
-  font-size: 45px;
-  margin: 15px 0;
-}
-
-.cta p {
-  color: #765d67;
-  line-height: 1.8;
-  margin-bottom: 25px;
-}
-
-footer {
-  max-width: 1200px;
-  margin: auto;
-  padding: 30px 6%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  color: #806e75;
-  font-size: 12px;
-}
-
-.social {
-  color: #b65f7c;
-  font-weight: bold;
-}
-
-@media(max-width: 760px) {
-  header {
-    justify-content: center;
-  }
-
-  nav {
-    width: 100%;
-    justify-content: center;
-    gap: 18px;
-  }
-
-  .hero {
-    grid-template-columns: 1fr;
-    gap: 35px;
-  }
-
-  .hero-image {
-    order: -1;
-  }
-
-  .hero-image img {
-    height: 350px;
-  }
-
-  .gallery {
-    grid-template-columns: 1fr;
-    max-width: 430px;
-  }
-
-  .about {
-    grid-template-columns: 1fr;
-  }
-
-  footer {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
 <div class="announcement">
-A LITTLE SWEETNESS MAKES EVERY MOMENT SPECIAL ✿
+A LITTLE SWEETNESS MAKES EVERY MOMENT SPECIAL
 </div>
 
 <header>
-<a href="#" class="logo">classic <span>bites.</span></a>
+<a href="index.html" class="logo">classic <span>bites.</span></a>
 
 <nav>
 <a href="#treats">Our treats</a>
 <a href="#story">Our story</a>
-<a href="#connect">Find us</a>
+<a href="order.html">Order</a>
 </nav>
 
-<a class="button" href="https://www.tiktok.com/search?q=Classic%20Bites" target="_blank">TikTok ↗</a>
+<a class="button" href="order.html">Order</a>
 </header>
 
 <main>
@@ -355,15 +35,21 @@ A LITTLE SWEETNESS MAKES EVERY MOMENT SPECIAL ✿
 <h1>A little bit of <em>sweet</em> in every day.</h1>
 
 <p>
-Welcome to Classic Bites — your happy place for beautiful desserts and unforgettable little treats. Take a look around and find your next sweet favourite.
+Welcome to Classic Bites. Look through the desserts, see what is in each one, and order the tray you want.
 </p>
 
-<a href="#treats" class="button">Explore the treats ↗</a>
+<a href="#treats" class="button">Explore the treats</a>
 </div>
 
 <div class="hero-image">
-<img src="https://energijosproduktai.lt/cdn/shop/files/ad-more-colorful-desserts-nott-only-chocolate.png?v=1766043621" alt="Colourful desserts">
-<div class="stamp">baked with<br>love ♡</div>
+<div class="cycle-frame">
+<div class="cycle" id="cycle"></div>
+<button class="cycle-btn prev" id="cycle-prev" type="button" aria-label="Previous dessert">‹</button>
+<button class="cycle-btn next" id="cycle-next" type="button" aria-label="Next dessert">›</button>
+<div class="cycle-dots" id="cycle-dots"></div>
+<div class="stamp">baked with<br>love</div>
+</div>
+<p class="cycle-caption" id="cycle-caption" aria-live="polite"></p>
 </div>
 </section>
 
@@ -374,43 +60,17 @@ Welcome to Classic Bites — your happy place for beautiful desserts and unforge
 <h2>Little bites, big delight.</h2>
 
 <p class="intro">
-A few sweet inspirations while we get the Classic Bites gallery ready. These are temporary sample photos and can be replaced with your own dessert pictures anytime.
+Each card is a dessert we bake, with the ingredients in it. Order when you have picked one.
 </p>
 
-<div class="gallery">
-
-<div class="treat">
-<img src="https://cutecakesandco.com.au/cdn/shop/files/91BE6BF8-181F-4EDA-AC42-853E70E545D7_1_201_a.jpg?v=1768447720" alt="Pretty cakes">
-<div class="treat-copy">
-<h3>Pretty little cakes</h3>
-<p>For celebrations, surprises and everything in between.</p>
-</div>
-</div>
-
-<div class="treat">
-<img src="https://images.squarespace-cdn.com/content/v1/6981860258d6846ea760d9de/5a85e8ea-8751-43fa-ab3b-16877386e7e5/CHEEECAKEFLAT%2BLAY.jpg?format=1000w" alt="Sweet favourites">
-<div class="treat-copy">
-<h3>Sweet favourites</h3>
-<p>Colourful, creamy and made for a little indulgence.</p>
-</div>
-</div>
-
-<div class="treat">
-<img src="https://prcdn.freetls.fastly.net/release_image/14571/3515/14571-3515-bd88662d8f1581bfa66ada5faf376343-3900x2600.jpg?auto=webp&bg-color=fff&fit=bounds&format=jpeg&height=1350&quality=85%2C65&width=1950" alt="Desserts to share">
-<div class="treat-copy">
-<h3>Made to share</h3>
-<p>Because the best moments are even sweeter together.</p>
-</div>
-</div>
-
-</div>
+<div class="gallery" id="gallery"></div>
 </section>
 
 <section class="section" id="story">
 
 <div class="about">
 
-<img src="https://static.tildacdn.com/tild3631-3031-4636-b331-633662653633/ChatGPT_Image_15__20.png" alt="Pastel desserts">
+<img src="desserts/cupcakes.jpg" alt="Frosted cupcakes">
 
 <div>
 <div class="eyebrow">THE STORY BEHIND THE BITES</div>
@@ -418,10 +78,10 @@ A few sweet inspirations while we get the Classic Bites gallery ready. These are
 <h2>Sweetness is our love language.</h2>
 
 <p>
-Classic Bites is all about bringing a little extra joy to your day, one dessert at a time. This space is where you can discover our treats, get inspired and keep up with what we're making.
+Classic Bites is all about bringing a little extra joy to your day, one dessert at a time. This space is where you can discover our treats, see what is in them, and place an order.
 </p>
 
-<div class="note">Made for your sweetest moments ♡</div>
+<div class="note">Made for your sweetest moments</div>
 </div>
 
 </div>
@@ -429,17 +89,16 @@ Classic Bites is all about bringing a little extra joy to your day, one dessert 
 
 <section class="cta" id="connect">
 
-<div class="eyebrow">LET'S STAY IN THE SWEET LOOP</div>
+<div class="eyebrow">READY FOR SOMETHING SWEET</div>
 
-<h2>Come say hello!</h2>
+<h2>Place an order</h2>
 
 <p>
-Follow Classic Bites on TikTok for sweet updates, dessert inspiration and more.
+Tell us your name, a phone number, the dessert you want, and any requests.
 </p>
 
-<a class="button" href="https://www.tiktok.com/search?q=Classic%20Bites" target="_blank">
-Find Classic Bites on TikTok ↗
-</a>
+<a class="button" href="order.html">Order</a>
+<a class="button" href="https://www.tiktok.com/search?q=Classic%20Bites" target="_blank" rel="noopener">TikTok</a>
 
 </section>
 
@@ -447,13 +106,15 @@ Find Classic Bites on TikTok ↗
 
 <footer>
 
-<a href="#" class="logo">classic <span>bites.</span></a>
+<a href="index.html" class="logo">classic <span>bites.</span></a>
 
 <span>© 2026 Classic Bites. A little sweetness, always.</span>
 
-<a class="social" href="https://www.tiktok.com/search?q=Classic%20Bites" target="_blank">TikTok ↗</a>
+<a class="social" href="order.html">Order</a>
 
 </footer>
 
+<script src="desserts.js"></script>
+<script src="home.js"></script>
 </body>
 </html>
