@@ -1,117 +1,225 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Classic Bites | Sweet Moments</title>
-<meta name="description" content="Classic Bites — baked desserts you can look through and order.">
+<meta name="description" content="Classic Bites — freshly baked desserts made with love. Discover our treats and place an order.">
+
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
+<!-- ANNOUNCEMENT -->
 <div class="announcement">
-A LITTLE SWEETNESS MAKES  EVERY MOMENT SPECIAL
+    A LITTLE SWEETNESS MAKES EVERY MOMENT SPECIAL
 </div>
 
+
+<!-- HEADER -->
 <header>
-<a href="index.html" class="logo">CLASSIC <span>BITES.</span></a>
 
-<nav>
-<a href="#treats">Our treats</a>
-<a href="#story">Our story</a>
-<a href="order.html">Order</a>
-</nav>
+    <a href="index.html" class="logo">
+        <img src="desserts/Logo.jpg" alt="Classic Bites logo">
+    </a>
 
-<a class="button" href="order.html">Order</a>
+    <nav>
+        <a href="#treats">Our treats</a>
+        <a href="#story">Our story</a>
+        <a href="order.html">Order</a>
+    </nav>
+
+    <a class="button" href="order.html">Order</a>
+
 </header>
+
 
 <main>
 
-<section class="hero">
-<div>
-<div class="eyebrow">MADE WITH LOVE, SERVED WITH JOY</div>
+    <!-- HERO SECTION -->
+    <section class="hero">
 
-<h1>A little bit of <em>sweetness</em> in every day.</h1>
+        <div class="hero-content">
 
-<p>
-Welcome to Classic Bites. Look through the desserts, see what is in each one, and order what you want.
-</p>
+            <div class="eyebrow">
+                MADE WITH LOVE, SERVED WITH JOY
+            </div>
 
-<a href="#treats" class="button">Explore our Desserts</a>
-</div>
+            <h1>
+                A little bit of <em>sweetness</em> in every day.
+            </h1>
 
-<div class="hero-image">
-<div class="cycle-frame">
-<div class="cycle" id="cycle"></div>
-<button class="cycle-btn prev" id="cycle-prev" type="button" aria-label="Previous dessert">‹</button>
-<button class="cycle-btn next" id="cycle-next" type="button" aria-label="Next dessert">›</button>
-<div class="cycle-dots" id="cycle-dots"></div>
-<div class="stamp">baked with<br>love</div>
-</div>
-<p class="cycle-caption" id="cycle-caption" aria-live="polite"></p>
-</div>
-</section>
+            <p>
+                Welcome to Classic Bites. Look through our desserts,
+                discover what's in each one, and order your favourites.
+            </p>
 
-<section class="section soft" id="treats">
+            <a href="#treats" class="button">
+                Explore our Desserts
+            </a>
 
-<div class="eyebrow">A PEEK AT THE SWEETNESS</div>
-
-<h2>Little bites, big delight.</h2>
-
-<p class="intro">
-Each card is a dessert we bake,with the ingredients in it. Order when you have picked one.
-</p>
-
-<div class="gallery" id="gallery"></div>
-</section>
-
-<section class="section" id="story">
-
-<div class="about">
-
-<img src="desserts/logo.jpg" alt="Sign">
-
-<div>
-<div class="eyebrow">THE STORY BEHIND THE BITES</div>
-
-<h2>Sweetness is our love language.</h2>
-
-<p>
-Classic Bites is all about bringing a little extra joy to your day, one dessert at a time. This space is where you can discover our treats, see what is in them, and place an order.
-</p>
-
-<div class="note">Made for your sweetest moments</div>
-</div>
-
-</div>
-</section>
-
-<section class="cta" id="connect">
-
-<div class="eyebrow">READY FOR SOMETHING SWEET</div>
-
-<h2>Place an order</h2>
+        </div>
 
 
-<a class="button" href="order.html">Order</a>
-<a class="button" href="https://www.tiktok.com/search?q=Classic%20Bites" target="_blank" rel="noopener">TikTok</a>
+        <!-- DESSERT SLIDESHOW -->
+        <div class="hero-image">
 
-</section>
+            <div class="cycle-frame">
+
+                <div class="cycle" id="cycle"></div>
+
+                <button
+                    class="cycle-btn prev"
+                    id="cycle-prev"
+                    type="button"
+                    aria-label="Previous dessert">
+                    ‹
+                </button>
+
+                <button
+                    class="cycle-btn next"
+                    id="cycle-next"
+                    type="button"
+                    aria-label="Next dessert">
+                    ›
+                </button>
+
+                <div
+                    class="cycle-dots"
+                    id="cycle-dots">
+                </div>
+
+                <div class="stamp">
+                    baked with<br>love
+                </div>
+
+            </div>
+
+            <p
+                class="cycle-caption"
+                id="cycle-caption"
+                aria-live="polite">
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- DESSERT GALLERY -->
+    <section class="section soft" id="treats">
+
+        <div class="eyebrow">
+            A PEEK AT THE SWEETNESS
+        </div>
+
+        <h2>Little bites, big delight.</h2>
+
+        <p class="intro">
+            Each card features a dessert we bake, along with its
+            ingredients. Find something you love and place an order.
+        </p>
+
+        <div class="gallery" id="gallery"></div>
+
+    </section>
+
+
+
+    <!-- OUR STORY -->
+    <section class="section" id="story">
+
+        <div class="about">
+
+            <img
+                src="desserts/Logo.jpg"
+                alt="Classic Bites logo">
+
+            <div>
+
+                <div class="eyebrow">
+                    THE STORY BEHIND THE BITES
+                </div>
+
+                <h2>
+                    Sweetness is our love language.
+                </h2>
+
+                <p>
+                    Classic Bites is all about bringing a little
+                    extra joy to your day, one dessert at a time.
+                    This is where you can discover our treats,
+                    see what goes into them, and place an order
+                    for your sweetest moments.
+                </p>
+
+                <div class="note">
+                    Made for your sweetest moments
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ORDER SECTION -->
+    <section class="cta" id="connect">
+
+        <div class="eyebrow">
+            READY FOR SOMETHING SWEET?
+        </div>
+
+        <h2>Place an order</h2>
+
+        <a class="button" href="order.html">
+            Order
+        </a>
+
+        <a
+            class="button"
+            href="https://www.tiktok.com/search?q=Classic%20Bites"
+            target="_blank"
+            rel="noopener">
+            TikTok
+        </a>
+
+    </section>
 
 </main>
 
+
+
+<!-- FOOTER -->
 <footer>
 
-<a href="index.html" class="logo">classic <span>bites.</span></a>
+    <a href="index.html" class="logo">
+        <img src="desserts/Logo.jpg" alt="Classic Bites logo">
+    </a>
 
-<span>© 2026 Classic Bites. A little sweetness, always.</span>
+    <span>
+        © 2026 Classic Bites. A little sweetness, always.
+    </span>
 
-<a class="social" href="order.html">Order</a>
+    <a class="social" href="order.html">
+        Order
+    </a>
 
 </footer>
 
+
+
+<!-- JAVASCRIPT FILES -->
 <script src="desserts.js"></script>
 <script src="home.js"></script>
+
 </body>
 </html>
